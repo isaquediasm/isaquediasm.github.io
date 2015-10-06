@@ -4,7 +4,7 @@ email: isaquediasm@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Um blog de um desenvolvedor Front End e entusiasta de novas tecnologias.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.isaquedias.com.br" # the base hostname & protocol for your site
+url: "http://isaquedias.com.br" # the base hostname & protocol for your site
 twitter_username: isaquediasm
 github_username:  isaquediasm
 
@@ -18,12 +18,7 @@ permalink: /:title/
 links:
   - title: Home
     url: /
-  - title: Séries
-    url: /series
-  - title: Tags
-    url: /tags
-  - title: Sobre mim
-    url: /about
+
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
