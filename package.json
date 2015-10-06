@@ -1,7 +1,7 @@
 {
-  "name": "willianjusten.github.io",
+  "name": "isaquedias.com.br",
   "version": "1.0.0",
-  "description": "Um blog sobre desenvolvimento web focado em frontend.",
+  "description": "Blog de um desenvolvedor-empreendedor, focado em frontend, mobile, e dicas de empreendedorismo na tecnologia.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "test"
@@ -15,7 +15,7 @@
     "jekyll",
     "js"
   ],
-  "author": "Willian Justen de Vasconcellos",
+  "author": "Isaque Dias",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer-stylus": "^0.4.0",

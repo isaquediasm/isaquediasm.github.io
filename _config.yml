@@ -1,12 +1,12 @@
 # Site settings
-title: Willian Justen - Desenvolvedor Front End
-email: willianjustenqui@gmail.com
+title: Isaque Dias - Empreendedor e Desenvolvedor Web
+email: isaquediasm@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Um blog de um desenvolvedor Front End e entusiasta de novas tecnologias.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://willianjusten.com.br" # the base hostname & protocol for your site
-twitter_username: willian_justen
-github_username:  willianjusten
+url: "http://isaquedias.com.br" # the base hostname & protocol for your site
+twitter_username: isaquediasm
+github_username:  isaquediasm
 
 # Build settings
 markdown: kramdown

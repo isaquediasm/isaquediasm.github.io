@@ -1,0 +1,23 @@
+---
+layout: minimal
+title: "Blog"
+permalink: /blog/index.html
+image: '/assets/img/series.png'
+description: "Artigos sobre tecnologia e empreendedorismo"
+---
+ {% for post in site.posts limit:5 %}
+<section class="blog-posts">
+ <article itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost" class="social-icon-out blog-post col-md-10 col-md-offset-1">
+        <a href="{{ post.url | prepend: site.baseurl }}"><h3 itemprop="name">{{ post.title }}</h3></a>
+        <h6 class="date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %B %Y" }}</h6>
+        <p>{{ post.content | strip_html | truncatewords:40 }}
+            <a href="{{ post.url | prepend: site.baseurl }}" class="link">Leia mais sobre {{post.title}}</a></p>
+
+        
+        
+        
+        
+    </article>
+   {% endfor %}
+</section>
+

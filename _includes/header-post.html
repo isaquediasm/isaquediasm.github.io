@@ -1,12 +1,35 @@
-<header class="header-post" role="banner">
-    <div class="content">
-        <meta itemprop="datePublished" content="{{ page.date }}">
-        {% if page.date %}
-            <p class="date">{{ page.date | date_to_string }}</p>
-        {% endif %}
-        <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
-        <p itemprop="description" class="subtitle">{{ page.description }}</p>
-    </div>
-     <a class="down" data-scroll href="#scroll"><svg class="icon icon-angle-down"><use xlink:href="#icon-angle-down"></use></svg></a>
-     {% include menu-search.html %}
-</header>
+ <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+
+            </li>
+            <li>
+                <a href="../#top">Home</a>
+            </li>
+            <li>
+                <a href="../#about">Serviços</a>
+            </li>
+            <li>
+                <a href="../#services">Sobre</a>
+            </li>
+            <li>
+                <a href="../#portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a href="../#contact">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+ <header class="header-post col-md-12 text-center">
+      
+        <h1 itemprop="name">{{ page.title }}</h1>
+             {% if page.date %}
+        <h6 itemprop="datePublished" content="{{ page.date }}">{{ page.date | date_to_string }}</h6>
+         {% endif %}   
+     <p itemprop="description">{{ page.description }}</p>
+    </header>
+            

@@ -2,18 +2,18 @@
 <html lang="pt-br">
     {% include head.html %}
     <body>
-        {% include svg-icons.html %}
-        <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        
             {% include header-post.html %}
-
-            <article role="article" id="scroll" class="post-content" itemprop="articleBody">
-                {{ content }}
+        <section class="postagem col-md-12">
+       <article>
+            {{ content }}
+            
             </article>
-
             {% include share.html %}
+                </section>
+        
             {% include author.html %}
             {% include comments.html %}
-            {% include footer.html %}
+            
         </section>
-    </body>
-</html>
+{% include footer.html %}

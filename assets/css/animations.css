@@ -1,0 +1,46 @@
+@keyframes intro {
+	from {
+        
+        left: -100px;
+        opacity: 0;
+       
+    }
+
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+
+}
+
+
+@keyframes botao {
+	0% {
+
+		
+	}
+
+    25% {
+       	border-bottom: 4px solid #F4F0B9;
+		border-top: 4px solid #F4F0B9; 
+    }
+
+    50% {
+    	border-bottom: 4px solid #6BC0B6;
+		border-top: 4px solid #6BC0B6; 
+
+    }
+
+    75% {
+    	border-bottom: 4px solid #91C272;
+		border-top: 4px solid #91C272; 
+    	
+    }
+
+    100% {
+    	border-bottom: 4px solid #D6CFA3;
+		border-top: 4px solid #D6CFA3; 
+    	
+    }
+
+}

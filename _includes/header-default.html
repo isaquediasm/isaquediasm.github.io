@@ -1,17 +1,222 @@
-<header class="header-site" role="banner">
-    <div class="content">
-        <h1>
-            <span class="site-title">Willian Justen</span>
-            <span class="site-description">Desenvolvedor Front End</span>
-        </h1>
-        <div class="icons-home">
-            <a aria-label="Enviar Email" href="mailto:willianjustenqui@gmail.com"><svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg></a>
-            <a aria-label="Meu Twitter" target="_blank" href="https://twitter.com/Willian_justen"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a>
-            <a aria-label="Meu Google Plus" target="_blank" href="https://plus.google.com/+WillianJustendeVasconcellos/posts"><svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg></a>
-            <a aria-label="Meu Github" target="_blank" href="https://github.com/willianjusten"><svg class="icon icon-github-alt"><use xlink:href="#icon-github-alt"></use></svg></a>
-            <a aria-label="Use o RSS para receber todos os posts novos" target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}"><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a>
+ <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+
+            </li>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#about">Sobre</a>
+            </li>
+            
+            <li>
+                <a href="#contact">Contato</a>
+            </li>
+            <li>
+                <a href="/blog">Blog</a>
+            </li>
+            <li>
+                <a href="/feed.xml">Feed</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="col-md-12 wrapper">
+
+        <div class="push"></div>
+
+        <h1 class="titulo-1 header-titulo text-center">Construindo interfaces centradas no usuário<span class="ponto">.<span></h1>
+
+    </header>
+            
+            <a href="#" onclick="$('html,body').animate({scrollTop: $('.target-sobre').offset().top}, 1000);" title="">
+        <div class="col-md-1 botao botao-header">
+            <p>Saiba mais sobre mim.</p>
         </div>
-    </div>
-    <a role="button" class="down" data-scroll href="#scroll"><svg class="icon icon-angle-down"><use xlink:href="#icon-angle-down"></use></svg></a>
-    {% include menu-search.html %}
-</header>
+    </a>
+
+    <section class="intro-frase col-md-12">
+        <div class="row">
+            <article class="article-intro-frase col-md-8 col-md-offset-2">
+                <p class="grande cor-branco-2 text-center light">Investir em <a href="#">User Experience</a> e <a href="#">User Interface</a> é garantir que no meio do caminho da comunicação, nenhuma informação será perdida. </p>
+            </article>
+        </div>
+    </section>
+    
+   
+    <section class="col-md-12" itemscope itemtype="http://schema.org/Offer">
+        <div class="row">
+            <figure class="col-md-7 img-side-servico"></figure>
+            <div class="col-md-5 box-servicos text-center">
+                <img class="center-block img-servico" src="{{ "assets/img/idea.svg" | prepend: site.baseurl }}" width="150px" height="150px">
+                <h6 itemprop="name">Interfaces Amigáveis e Inteligentes</h6>
+                <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="col-md-5 box-servicos text-center">
+                <img class="center-block img-servico-2" src="{{ "assets/img/mobile.svg" | prepend: site.baseurl }}" width="200px" height="200px">
+                <h6 itemprop="name">Websites Desktop e Mobile</h6>
+                <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </section>
+    <section class="intro-frase col-md-12">
+        <div class="row">
+            <article class="article-intro-frase col-md-8 col-md-offset-2">
+                <p class="grande cor-branco-2 text-center light">Investir em <a href="#">User Experience</a> e <a href="#">User Interface</a> é garantir que no meio do caminho da comunicação, nenhuma informação será perdida. </p>
+            </article>
+        </div>
+    </section>
+    
+    <section class="col-md-12" itemscope itemtype="http://schema.org/Person">
+        <div class="row">
+            <article class="col-md-6 col-sm-12 bio-autor box-sobre padding text-center">
+                <h5 itemprop="name">Isaque Dias, desenvolvedor web.</h5>
+                <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+            <div id="about" class="target"></div>
+            <article class="col-md-6 box-sobre padding">
+                <h6>Formação Acadêmica</h6>
+                <Br />
+                <!--<blockquote>
+                    <p class="size-17">Ensino Médio | <span class="text-success">Concluído</span></p>
+                    <footer><cite title="Source Title">Serviço Social da Indústria - SESI</cite></footer>
+                </blockquote>-->
+                <blockquote>
+                    <p class="size-17">Técnico em Desenvolvimento de Software | <span class="text-success"> Concluído</span></p>
+                    <footer><cite title="Source Title">Serviço Nacional da Indústria - SENAI</cite></footer>
+                </blockquote>
+                <blockquote>
+                    <p class="size-17">Bacharelado em Sistemas de Informação | <span class="text-warning"> Em curso</span></p>
+                    <footer><cite title="Source Title">Universidade Federal da Bahia - UFBA</cite></footer>
+                </blockquote>
+            </article>
+            <article class="col-md-6 col-sm-12 box-sobre padding">
+                <h6>Competências</h6>
+                <br />
+                <div class="col-md-12">
+                    <div class="row">
+                        <p style="margin-top: -7px;" class="col-md-2">Javascript</p>
+                        <div class="progress">
+                            <div style="width:85%" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12" >
+                    <div class="row">
+                        <p style="margin-top: -7px;" class="col-md-2">AngularJS</p>
+                        <div class="progress">
+                            <div style="width:85%" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <p style="margin-top: -7px;" class="col-md-2">Ionic</p>
+                        <div class="progress">
+                            <div style="width:85%" class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <p style="margin-top: -7px;" class="col-md-2">Cordova</p>
+                        <div class="progress">
+                            <div style="width: 85%" class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <p style="margin-top: -7px;" class="col-md-2">Stylus, Sass</p>
+                        <div class="progress">
+                            <div style="width:45%" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <p style="margin-top: -7px;" class="col-md-2">Gulp,Grunt</p>
+                        <div class="progress">
+                            <div style="width:40%" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <p style="margin-top: -7px;" class="col-md-2">PHP</p>
+                        <div class="progress">
+                            <div style="width:80%" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <p style="margin-top: -7px;" class="col-md-2">MySQL</p>
+                        <div class="progress">
+                            <div style="width:70%" class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <p style="margin-top: -7px;" class="col-md-2">JQuery</p>
+                        <div class="progress">
+                            <div style="width:60%" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <p style="margin-top: -7px;" class="col-md-2">Bootstrap</p>
+                        <div class="progress">
+                            <div style="width:75%" class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <p style="margin-top: -7px;" class="col-md-2">Java Web</p>
+                        <div class="progress">
+                            <div style="width:23%" class="progress-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <p style="margin-top: -7px;" class="col-md-2">Scrum</p>
+                        <div class="progress">
+                            <div style="width:40%" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 col-sm-12 bio-autor box-sobre text-center">
+                <h5>Interesses</h5>
+                <p>Construção de Aplicativos Móveis com PhoneGap, Ionic e Angular.
+                    <strong>Sistemas RestFul.</strong> WebComponents. Metodologias Ágeis. <strong>User Experience</strong>. Flat Design. <strong>User Interface</strong>. Etc.
+                </p>
+            </article>
+        </div>
+    </section>
+    <section class="intro-frase-2 col-md-12">
+        <div class="row">
+            <div id="contact" class="target"></div>
+            <article class="article-intro-frase col-md-8 col-md-offset-2">
+                 
+                <h6 class="text-center light">Gostou do meu perfil? Entre em contato!<br /><br />
+                <a href="mailto:isaquediasm@gmail.com">isaquediasm@gmail.com</a>
+              <!-- <button class="btn btn-embossed btn-primary">
+
+                  Entre em Contato
+                </button>-->
+               </h6>
+            </article>
+        </div>
+    </section>

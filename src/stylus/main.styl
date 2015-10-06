@@ -1,0 +1,289 @@
+@import "reset.css"
+@import "fonts.css"
+@import "variables.styl"
+@import "text.styl"
+@import "animations.styl"
+
+html, body
+	height 100%
+	font-family font-regular
+	
+
+// Header principal do site
+.topper, .content
+	display table
+	width 100%
+	height 100%
+	line-height 100%
+	
+.topper 
+	
+	text-align center
+	color text-white
+	background url(../images/bg-5.jpg) no-repeat center center fixed
+	background-color #22A7F0
+	-webkit-background-size cover
+	-moz-background-size cover
+	-o-background-size cover
+	background-size cover
+	
+		
+	.title
+		width 40%
+		
+		display table-cell
+		vertical-align middle
+		
+		
+		h2
+			position relative
+			text-shadow 1px 1px 2px #8B8989	
+		
+		h6 
+			font-size text-6
+			margin-top val-md
+	
+
+.sidebar 
+	z-index 10
+	height 100%
+	left -250px
+	position fixed	
+	
+
+	
+	.open-menu
+		padding 10px
+		width 20px
+		height 20px
+		background-image url(../images/menu61.svg)
+		background-color rgba(0, 0, 0, 0.3)
+			
+		border-radius 5px
+		
+		
+		
+		
+	.close-menu
+		width 20px
+		height 20px
+		background-image url(../images/close.svg)
+		background-color rgba(0, 0, 0, 0.3)
+		border-radius 5px
+		
+	
+#navigation
+	width 250px
+	height 100%
+	background-color #242f35
+	
+.show 
+	left 250px
+	
+#slide-menu 
+	
+	cursor pointer
+	cursor hand
+	position relative
+	margin val-sm 0 0 val-sm
+	left: 55px
+	float right
+	padding val-xs
+	transition all 0.5s
+	
+
+.hidden
+	width 0
+	
+.show 
+	width 250px
+
+.display-none
+	display none
+	opacity 0
+	transition all 0.5s
+
+.display-block
+	display-block
+	opacity 1
+	transition all 0.5s
+
+#layer
+	cursor pointer
+	cursor hand
+	z-index: 2
+	position fixed
+	width 100%
+	height 100%
+	background-color rgba(0,0,0,0.4)
+		
+#pusher
+	position relative
+	
+/* 
+	POSTAGENS
+*/
+
+.group-posts
+	position relative
+	width 80%
+	margin 0 auto
+	margin-top 100px
+	
+.grid-posts
+	position relative
+	float: left
+	margin-right 2%
+	width 31.33%
+	
+	
+	
+	
+#posts
+	
+	background-color #EFEFEF
+	
+.intro
+	margin-bottom 50px
+	color #868686
+	width 95%
+	
+	p
+		margin-top 40px
+
+.post-box:hover
+	background-color #F2F6F7
+	
+	h1
+		color #3F6FBE
+		
+	
+.post-box
+	transition()
+	position relative
+		
+	width 100%
+	
+	margin-bottom: 20px;
+	background-color #FCFCFC
+	 box-shadow: 1px 2px 2px #E0DDDD
+	float left
+	
+	.footer 
+		height 300px
+		width 100%
+		-webkit-background-size cover
+		-moz-background-size cover
+		-o-background-size cover
+		background-size cover
+		
+
+	.body 
+		
+		margin-top 30px
+		padding 20px
+	
+	
+		
+	h1
+		font-family font-light
+		font-weight 100
+		font-size text-5
+		
+		padding-bottom 20px
+		color #8F9496
+		line-height 1.2em
+		text-align center
+		
+	p
+		padding-bottom 50px
+		margin-top 20px
+		border-bottom 2px solid #D5D7E7
+		color #565656
+	
+	.button 
+		background-color #76BADD
+		margin-top -20px
+		
+	
+	.button:hover
+		background-color #689CB6
+
+
+.button
+	a-reset()
+	transition()
+	font-family font-light
+	font-size text-5
+	color white
+	text-transform uppercase
+	border 1px solid white
+	padding 10px
+	float right
+	
+
+.post-text
+	position relative
+	background-color #FCFCFC
+	z-index 100
+	width 100%
+	
+	
+	p 
+		opacity 1
+	
+
+.align-center
+	display block
+	margin 0 auto !important
+	
+.icon-arrow 
+	position relative
+	display block
+	margin 0 auto !important
+	transition()
+	
+	svg 
+		fill #A0E0E8
+		width 50px
+		
+
+.icon-arrow:hover 
+	position relative
+
+	-webkit-animation-name: pulse;
+	-webkit-animation-duration: 0.8s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	
+
+@media screen and (max-width 600px)
+	.group-posts
+		position relative
+		width 80%
+		margin 0 auto
+		margin-top 100px
+	
+	.grid-posts
+		position relative
+		float: left
+		margin-right 2%
+		width 31.33%
+	h1 
+		font-size text-5
+		
+	h2 
+		font-size text-10
+		
+	.title  
+		h2	
+			
+			width 80%
+			margin 0 auto
+			line-height 100%
+		h6
+			font-size text-5
+
+	
+

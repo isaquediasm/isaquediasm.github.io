@@ -8,11 +8,11 @@
 
     <!-- Google Authorship Markup -->
     <meta name="google-site-verification" content="8kDtWUmUQEh7QXoj_shRaxcgYAVpHs_YQ7TeniN0kmI" />
-    <link rel="author" href="https://plus.google.com/+WillianJustendeVasconcellos?rel=author">
+    <link rel="author" href="https://plus.google.com/+IsaqueDiasm?rel=author">
 
     <!-- Social: Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@willian_justen">
+    <meta name="twitter:site" content="@isaquediasm">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     {% if page.image %}
@@ -51,7 +51,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/icons/apple-touch-icon-76x76.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/icons/apple-touch-icon-152x152.png" />
     <!-- Windows 8 Tile Icons -->
-    <meta name="application-name" content="Willian Justen Blog">
+    <meta name="application-name" content="Isaque Dias">
     <meta name="msapplication-TileColor" content="#0562DC">
     <meta name="msapplication-square70x70logo" content="smalltile.png" />
     <meta name="msapplication-square150x150logo" content="mediumtile.png" />
@@ -60,7 +60,14 @@
     <!-- Android Lolipop Theme Color -->
     <meta name="theme-color" content="#0562DC">
 
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/css/bootstrap-theme.min.css" | prepend: site.baseurl }}">
+  
+    <link rel="stylesheet" href="{{ "/assets/css/animations.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/css/flat-ui.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/css/theme.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/css/font-awesome-4.1.0/css/font-awesome.min.css" | prepend: site.baseurl }}">
+    
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 </head>

@@ -1,5 +1,98 @@
-<footer>
-    <p>Feito com <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> e <span class="love">❤</span></p>
-</footer>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+ <footer style="background-color: white; margin-top: 50px;" class="bottom col-md-12 text-center">
+
+
+        <section>
+            <figure class="center-block logo-footer"></figure>
+            <p>Copyright © 2014 Isaque Dias</p>
+        </section>
+    </footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65325433-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <script>
+
+        jQuery("document").ready(function ($) {
+
+    var header2 = $('.nav-menu');
+    $(header2).addClass("display-none");
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 600) {
+
+            header2.css("display", "block");
+
+        } else {
+
+            header2.css("display", "none");
+        }
+    });
+
+    // Closes the sidebar menu
+    $("#menu-close").click(function (e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function () {
+        $('a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+
+    $('.link').click(function () {
+        $('#wrapper').scrollTo($(this).attr('href'), 800);
+
+        $('.link').removeClass('selected');
+        $(this).addClass('selected');
+        return false;
+    });
+});
+
+
+function setPosition(check, div, p1, p2, p3, p4) {
+    if (check === '#box1') {
+        $(div).scrollTo(p1, 800);
+    } else if (check === '#box2') {
+        $(div).scrollTo(p2, 800);
+    } else if (check === '#box3') {
+        $(div).scrollTo(p3, 800);
+    } else {
+        $(div).scrollTo(p4, 800);
+    }
+};
+
+    </script>
+    </body>
+
+</html>
+       
