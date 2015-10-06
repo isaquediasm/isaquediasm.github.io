@@ -1,6 +1,7 @@
  <div class="share-buttons m-b-xl">
            <h4 class="font-thin">Compartilhe</h4>
-        <a class="social-icon"  target="_blank" onclick="window.open(this.href, 'facebook-share', 'width=550,height=235');return false;" href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | prepend: site.baseurl }}" title="Compartilhe no Facebook"><img src="{{ "/assets/img/facebook31.svg" | prepend: site.baseurl }}" alt="Facebook"></a>
-        <a class="social-icon" title="Compartilhe no Twitter"><img src="{{ "/assets/img/twitter-clear.svg" | prepend: site.baseurl }}" alt="Twitter"></a>
+        <a aria-label="Compartilhe no Facebook" class="social-icon"  target="_blank" onclick="window.open(this.href, 'facebook-share', 'width=550,height=235');return false;" href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | prepend: site.baseurl }}" title="Compartilhe no Facebook"><img src="{{ "/assets/img/facebook31.svg" | prepend: site.baseurl }}" alt="Facebook"></a>
+        <a aria-label="Compartilhe no Twitter" class="social-icon" title="Compartilhe no Twitter" href="https://twitter.com/intent/tweet?text=&quot;{{ page.twitter_text }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}"
+onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" ><img src="{{ "/assets/img/twitter-clear.svg" | prepend: site.baseurl }}" alt="Twitter"></a>
        </div>
        

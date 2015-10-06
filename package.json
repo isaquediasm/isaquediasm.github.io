@@ -1,5 +1,5 @@
 {
-  "name": "isaquedias.com.br",
+  "name": "www.isaquedias.com.br",
   "version": "1.0.0",
   "description": "Blog de um desenvolvedor-empreendedor, focado em frontend, mobile, e dicas de empreendedorismo na tecnologia.",
   "main": "gulpfile.js",
@@ -21,7 +21,7 @@
     "autoprefixer-stylus": "^0.4.0",
     "browser-sync": "^1.9.0",
     "grunt": "^0.4.5",
-    "gulp": "^3.8.10",
+    "gulp": "^3.9.0",
     "gulp-concat": "^2.4.3",
     "gulp-imagemin": "^2.1.0",
     "gulp-plumber": "^0.6.6",
