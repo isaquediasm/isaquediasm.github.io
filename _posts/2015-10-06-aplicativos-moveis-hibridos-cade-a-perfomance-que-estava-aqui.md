@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Aplicativos móveis híbridos; cadê a perfomance que estava aqui?"
-date: 2015-10-06 16:01:33
+title: "Aplicativos móveis híbridos: cadê a performance que estava aqui?"
+date: 2015-10-07 16:01:33
 image: '/assets/img/perfomance-ionic/Main.jpg'
-description: "História real de um dev desesperado por um app fluido"
+description: "Quem nunca sofreu com a performance dos híbridos? Essa postagem relata a história de um dev deseperado por um app fluido."
 tags:
-- Perfomance
+- Performance
 - Ionic Framework
 
 categories:
-twitter_text: "Otimizando a perfomance do seu app Ionic"
+twitter_text: "História real de um dev desesperado por um app fluido"
 ---
 
 Nos últimos 14 meses estive bastante engajado no desenvolvimento de apps com [Ionic Framework](http://www.ionicframework.com){:target="_blank"}, e nesse post irei compartilhar um pouco das minhas experiências ao longo do caminho.
@@ -83,9 +83,9 @@ Iterar listas com o ng-repeat é extremamente custoso. O Ionic possui duas alter
 
 **1. Collection-repeat**
 
-> Collection-repeat é uma diretiva que nos permite renderizar listas com centenas de itens sem penalizar a perfomance.
+> Collection-repeat é uma diretiva que nos permite renderizar listas com centenas de itens sem penalizar a performance.
 
-Isso significa que, se você tiver uma lista com 2000 itens, apenas os que couberem na tela serão renderizados. Ou seja, 10 itens serão renderizados ao invés de 2000 (O problema com a perfomance das listas é a renderização no browser. Entretanto, o problema com o collection-repeat é que os itens precisam ter a mesma altura e tamanho para que tudo funcione:
+Isso significa que, se você tiver uma lista com 2000 itens, apenas os que couberem na tela serão renderizados. Ou seja, 10 itens serão renderizados ao invés de 2000 (O problema com a performance das listas é a renderização no browser. Entretanto, o problema com o collection-repeat é que os itens precisam ter a mesma altura e tamanho para que tudo funcione:
 
 {% highlight html %}
 <div class="contact-list">
@@ -112,5 +112,5 @@ O native scrolling foram implementados apenas na WKWebView do iOS8, ou seja, o s
 <br><br>
 
 ###### Conclusão
-O Ionic faz um ótimo trabalho em entregar excelentes componentes e diretivas que permitem aos desenvolvedores construir apps de forma rápida, sem comprometer a qualidade. Porém, o Angular ainda possui sérios problemas em perfomance, sobretudo na iteração de listas, o que nos obriga a buscar soluções alternativas.
+O Ionic faz um ótimo trabalho em entregar excelentes componentes e diretivas que permitem aos desenvolvedores construir apps de forma rápida, sem comprometer a qualidade. Porém, o Angular ainda possui sérios problemas em performance, sobretudo na iteração de listas, o que nos obriga a buscar soluções alternativas.
 
