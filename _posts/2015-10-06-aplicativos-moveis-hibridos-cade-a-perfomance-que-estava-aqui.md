@@ -3,7 +3,7 @@ layout: post
 title: "Aplicativos móveis híbridos; cadê a perfomance que estava aqui?"
 date: 2015-10-06 16:01:33
 image: '/assets/img/perfomance-ionic/Main.jpg'
-description: "O grande problema performático dos híbridos solucionado em 5 dicas."
+description: "História real de um dev desesperado por um app fluido"
 tags:
 - Perfomance
 - Ionic Framework
