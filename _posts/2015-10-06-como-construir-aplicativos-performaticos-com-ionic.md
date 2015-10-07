@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Como construir aplicativos performáticos com Ionic Framework"
+title: "Aplicativos móveis híbridos; cadê a perfomance que estava aqui?"
 date: 2015-10-06 16:01:33
-image: '/assets/img/perfomance-ionic/Main.png'
-description: "Como consegui construir aplicativos fluidos com Ionic Framework"
+image: '/assets/img/perfomance-ionic/Main.jpg'
+description: "O grande problema performático dos híbridos solucionado em 5 dicas."
 tags:
 - Perfomance
 - Ionic Framework
