@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Como construir aplicativos performáticos com Ionic Framework"
-date: 2015-10-06 16:01:34
+date: 2015-10-06 16:01:33
 image: '/assets/img/perfomance-ionic/Main.png'
 description: "Como consegui construir aplicativos fluidos com Ionic Framework"
 tags:
