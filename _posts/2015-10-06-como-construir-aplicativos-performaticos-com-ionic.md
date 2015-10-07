@@ -105,7 +105,6 @@ Native scrolling significa dispensar o uso do [$ionicScrollDelegate](http://ioni
 {% highlight js %}
 if (!ionic.Platform.isIOS()) {
     $ionicConfigProvider.scrolling.jsScrolling(false);
-    /*$ionicConfigProvider.views.maxCache(0);*/
 }
 {% endhighlight %}
 
