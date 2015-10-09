@@ -9,7 +9,7 @@ tags:
 - Ionic Framework
 
 categories:
-twitter_text: "História real de um dev desesperado por um app fluido"
+twitter_text: "Aplicativos móveis híbridos: cadê a performance que estava aqui?"
 ---
 
 Nos últimos 14 meses estive bastante engajado no desenvolvimento de apps com [Ionic Framework](http://www.ionicframework.com){:target="_blank"}, e nesse post irei compartilhar um pouco das minhas experiências ao longo do caminho.
