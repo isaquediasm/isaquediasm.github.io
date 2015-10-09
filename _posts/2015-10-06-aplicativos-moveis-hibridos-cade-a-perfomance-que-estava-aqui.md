@@ -15,23 +15,23 @@ twitter_text: "História real de um dev desesperado por um app fluido"
 Nos últimos 14 meses estive bastante engajado no desenvolvimento de apps com [Ionic Framework](http://www.ionicframework.com){:target="_blank"}, e nesse post irei compartilhar um pouco das minhas experiências ao longo do caminho.
 <br>
 
-Em meados do ano passado me uni com um colega da faculdade para desenvolver um app, e então nos veio a grande dúvida; nativo ou híbrido? Analisamos a situaçao, e obviamente optamos por construir o aplicativo utilizando Ionic.
+Em meados do ano passado me uni a um colega da faculdade para desenvolver um aplicativo móvel, e então nos veio a grande dúvida; nativo ou híbrido? Analisamos a situaçao, e obviamente optamos por construir o aplicativo utilizando Ionic.
 <br><br>
 
 ###### Em terra de JQuery Mobile, quem tem componentes otimizados é rei
-Quando conheci o Ionic, foi paixão a primeira vista. Componentes bem legais, e otimizados para mobile, diferente da maioria dos frameworks utilizados na época. Comecei a testar os componentes no browser, e pasmem; era realmente fluido. A possibiliade de construir apps hibridos com fluidez me animou bastante, e então mergulhei de cabeça no framework.
+Quando conheci o Ionic, foi paixão à primeira vista. Componentes bem legais e otimizados para mobile, diferente da maioria dos frameworks utilizados na época. Comecei a testar os componentes no browser e, pasmem, era realmente fluido. A possibilidade de construir apps híbridos com fluidez me animou bastante, e então mergulhei de cabeça no framework.
 <br><br>
 
 ###### A primeira build
-Desenvolvi a primeira versão do meu app, e apesar do app realmente não ter ficado tão bom, eu estava feliz com o resultado. Finalmente baixei todos os SDKs do Android, e fiz minha primeira build. Peguei a APK e instalei no meu Moto G, e me decepcionei com o resultado. 
+Desenvolvi a primeira versão do meu app e, apesar do app realmente não ter ficado tão bom, eu estava feliz com o resultado. Finalmente baixei todos os SDKs do Android e fiz minha primeira build. Peguei a APK, instalei no meu Moto G e me decepcionei com o resultado.
 <br><br>
 
 ###### A decepção
-Nem tudo era tão fluido como parecia. Sei que era noob o suficiente pra não testar o app em um emulador, mas eu não imaginava que a perda seria tão aterrorizante. A timeline do meu app era composta por cards com imagens full-width, como no Instagram, e obviamente o resultado daquilo não seria animador, mas eu tive que aprender da pior forma. As transições não funcionavam bem, e pra ser sincero, nada funcionava bem de verdade. Bem, pra resolver essa problemática, precisei de algumas soluções alternativas, as quais citarei a seguir:
+Nem tudo era tão fluido como parecia. Sei que era noob o suficiente pra não testar o app em um emulador, mas eu não imaginava que a perda seria tão aterrorizante. A timeline do meu app era composta por cards com imagens full-width, como no Instagram, e obviamente o resultado daquilo não seria animador, mas eu tive que aprender da pior forma. As transições não funcionavam bem, e pra ser sincero, nada funcionava bem de verdade. Então precisei de algumas soluções alternativas para otimizar a perfomance do meu app híbrido, as quais citarei a seguir:
 <br><br>
 
 ###### 1- Se possível, reduza o tamanho das imagens das listas
-Primeiro fiz o mais obvio. Reduzi a proporçao em px das imagens, e obtive uma melhora considerável. O layout ficou da seguinte forma:
+Primeiro, fiz o mais óbvio. Reduzi a proporção em px das imagens e obtive uma melhora considerável. O layout ficou da seguinte forma:
 
 ![Layout do App](/assets/img/perfomance-ionic/app.png)
 <br><br>
@@ -75,17 +75,18 @@ O Angularjs havia acabado de lançar o bind once ::, que permitia o one-time bin
 <br>
 
 ###### 4- Evite ng-show e ng-hide
-A diretiva ng-show irá renderizar o elemento, e utilizará **display:none** pra escondê-lo. O ng-if, por sua vez, remove o elemento do DOM, e o re-cria quando necessário.
+A diretiva ng-show vai renderizar o elemento, e utilizará **display:none** pra escondê-lo. O ng-if, por sua vez, remove o elemento do DOM e o re-cria quando necessário.
 <br><br>
 
+
 ###### 5- Evite utilizar ng-repeat
-Iterar listas com o ng-repeat é extremamente custoso. O Ionic possui duas alternativas para isso:
+Iterar listas com o ng-repeat é extremamente custoso. O Ionic Framework possui duas alternativas para isso:
 
 **1. Collection-repeat**
 
 > Collection-repeat é uma diretiva que nos permite renderizar listas com centenas de itens sem penalizar a performance.
 
-Isso significa que, se você tiver uma lista com 2000 itens, apenas os que couberem na tela serão renderizados. Ou seja, 10 itens serão renderizados ao invés de 2000 (O problema com a performance das listas é a renderização no browser. Entretanto, o problema com o collection-repeat é que os itens precisam ter a mesma altura e tamanho para que tudo funcione:
+Isso significa que, se você tiver uma lista com 2000 itens, apenas os que couberem na tela serão renderizados. Ou seja, 10 itens serão renderizados ao invés de 2000 (O problema com a performance das listas é a renderização no browser). Entretanto, o problema com o collection-repeat é que os itens precisam ter a mesma altura e tamanho para que tudo funcione:
 
 {% highlight html %}
 <div class="contact-list">
@@ -108,7 +109,16 @@ if (!ionic.Platform.isIOS()) {
 }
 {% endhighlight %}
 
-O native scrolling foram implementados apenas na WKWebView do iOS8, ou seja, o scroll nativo não funcionará como deveria em todas as versões do iOS. Logo, ignoramos o iOS no código acima.
+O native scrolling foi implementados apenas na WKWebView do iOS8, ou seja, o scroll nativo não funcionará como deveria em todas as versões do iOS. Logo, ignoramos o iOS no código acima.
+<br><br>
+
+*Recebi pelo facebook umas dicas bem legais do @luismoreno, e resolvi compartilhar com vocês:*
+
+###### 6- Use track by id no ng-repeat/collection-repeat
+O **track by id** não cria as hash keys e não duplica manipulações no DOM. A consequência disso são ganhos consideráveis na performance. (Ver [http://www.codelord.net/2014/04/15/improving-ng-repeat-performance-with-track-by/](http://www.codelord.net/2014/04/15/improving-ng-repeat-performance-with-track-by/){:target="_blank"})
+
+###### 7- Escreva CSS performático. 
+Além de estilizar o app, o CSS influencia diretamente na performance do app. Uma boa sugesão do @luismoreno é retirar do CSS do Ioni o que nao for utilizado, e sempre optar pelas boas práticas quando for criar suas próprias regras CSS. (Ver [https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS){:target="_blank"})
 <br><br>
 
 ###### Conclusão

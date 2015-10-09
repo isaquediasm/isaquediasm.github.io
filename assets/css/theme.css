@@ -811,7 +811,9 @@ hr.small {
    
    
 }
-
+.postagem p img {
+    width: 30%;
+}
 .postagem p, #bio p {
     font-size: 18px;
 }
