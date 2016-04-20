@@ -1,8 +1,8 @@
 # Site settings
-title: Isaque Dias - Empreendedor e Desenvolvedor Web
+title: Isaque Dias
 email: isaquediasm@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Um blog de um desenvolvedor Front End e entusiasta de novas tecnologias.
+  Blog de um desenvolvedor Front End e entusiasta de novas tecnologias.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://isaquedias.com.br" # the base hostname & protocol for your site
 twitter_username: isaquediasm
