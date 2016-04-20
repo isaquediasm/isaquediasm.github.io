@@ -2,7 +2,7 @@
 layout: post
 title: "Entendendo o Ionic Framework - Side menu"
 date: 2016-04-20 09:10:58
-image: '/assets/img/'
+image: '/assets/img/entendendo-o-ionic-framework-side-menu/sidemenu.png'
 description: "Não basta apenas utilizar os componentes. Para construir apps ainda melhores, é necessário entender o funcionamento do framework que será usado."
 tags: 
 categories:
