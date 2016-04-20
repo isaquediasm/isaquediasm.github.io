@@ -5,6 +5,7 @@ date: 2016-04-20 09:10:58
 image: '/assets/img/entendendo-o-ionic-framework-side-menu/sidemenu.png'
 description: "Não basta apenas utilizar os componentes. Para construir apps ainda melhores, é necessário entender o funcionamento do framework que será usado."
 tags: 
+- IonicFramework
 categories:
 twitter_text: 'Entenda como funciona o Side Menu do Ionic Framework'
 ---
