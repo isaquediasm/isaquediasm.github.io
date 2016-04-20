@@ -33,7 +33,7 @@ Nem tudo era tão fluido como parecia. Sei que era noob o suficiente pra não te
 ###### 1- Se possível, reduza o tamanho das imagens das listas
 Primeiro, fiz o mais óbvio. Reduzi a proporção em px das imagens e obtive uma melhora considerável. O layout ficou da seguinte forma:
 
-![Layout do App](/assets/img/perfomance-ionic/app.png)
+![Layout do App](/assets/img/perfomance-ionic/app.png){: .small-image }
 <br><br>
 
 ###### 2- Minimize/Evite o uso de ouvintes(watchers).

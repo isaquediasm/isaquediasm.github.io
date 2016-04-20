@@ -430,6 +430,9 @@ display-block
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
 }
+.full-image {
+  width: auto !important;
+}
 @media screen and (max-width: 600px) {
   .group-posts {
     position: relative;

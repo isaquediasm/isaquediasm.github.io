@@ -80,6 +80,15 @@ body {
     background-color: #f8f8f8;
 }
 
+
+.full-image {
+    width: auto;
+}
+
+.small-image {
+    width: 30%;
+}
+
 .size-16 {
     font-size: 16px;
 }
@@ -811,9 +820,7 @@ hr.small {
    
    
 }
-.postagem p img {
-    width: 30%;
-}
+
 .postagem p, #bio p {
     font-size: 18px;
 }
@@ -1059,5 +1066,3 @@ hr.small {
 @mediaonly screen and (-webkit-min-device-pixel-ratio : 1.5),only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
 }
-
-

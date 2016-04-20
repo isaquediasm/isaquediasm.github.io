@@ -46,12 +46,12 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
  * Stylus task
  */
 gulp.task('stylus', function(){
-		gulp.src('src/styl/main.styl')
+		gulp.src('src/css/**/*.css')
 		.pipe(plumber())
 		.pipe(stylus({
 			use:[koutoSwiss(), prefixer(), jeet(),rupture()],
 			compress: true
-		}))
+		}))	
 		.pipe(gulp.dest('_site/assets/css/'))
 		.pipe(browserSync.reload({stream:true}))
 		.pipe(gulp.dest('assets/css'))
@@ -85,7 +85,7 @@ gulp.task('imagemin', function() {
 gulp.task('watch', function () {
 	gulp.watch('src/styl/**/*.styl', ['stylus']);
 	gulp.watch('src/js/**/*.js', ['js']);
-	 gulp.watch('src/img/**/*.{jpg,png,gif}', ['imagemin']);
+	 gulp.watch('src/img/**/*.{jpg,png,gif}', ['Imagemin']);
 	gulp.watch(['*.html','index.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
